@@ -41,7 +41,7 @@ namespace KeySafe
 
 			if (mWithRepeat && tbPassword.Text != tbRepeat.Text)
 			{
-				MessageBox.Show("Entered passwords don't match!", "Check password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show("Entered passwords don't match!", "Check password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				tbRepeat.Text = tbPassword.Text = "";
 				tbPassword.Focus();
 				return;
