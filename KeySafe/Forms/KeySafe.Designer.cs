@@ -38,6 +38,7 @@
 			this.comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.ctxEdit = new System.Windows.Forms.ToolStripMenuItem();
+			this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
 			this.tbFilter = new System.Windows.Forms.TextBox();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.lbStatusResults = new System.Windows.Forms.ToolStripStatusLabel();
@@ -58,7 +59,6 @@
 			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ctxDelete = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.gridResults)).BeginInit();
 			this.contextMenuStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
@@ -135,15 +135,22 @@
             this.ctxEdit,
             this.ctxDelete});
 			this.contextMenuStrip.Name = "contextMenuStrip1";
-			this.contextMenuStrip.Size = new System.Drawing.Size(153, 74);
+			this.contextMenuStrip.Size = new System.Drawing.Size(123, 52);
 			this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
 			// 
 			// ctxEdit
 			// 
 			this.ctxEdit.Name = "ctxEdit";
-			this.ctxEdit.Size = new System.Drawing.Size(152, 24);
+			this.ctxEdit.Size = new System.Drawing.Size(122, 24);
 			this.ctxEdit.Text = "Edit";
 			this.ctxEdit.Click += new System.EventHandler(this.ctxEdit_Click);
+			// 
+			// ctxDelete
+			// 
+			this.ctxDelete.Name = "ctxDelete";
+			this.ctxDelete.Size = new System.Drawing.Size(122, 24);
+			this.ctxDelete.Text = "Delete";
+			this.ctxDelete.Click += new System.EventHandler(this.ctxDelete_Click);
 			// 
 			// tbFilter
 			// 
@@ -262,8 +269,8 @@
 			// aboutKeeSafeToolStripMenuItem
 			// 
 			this.aboutKeeSafeToolStripMenuItem.Name = "aboutKeeSafeToolStripMenuItem";
-			this.aboutKeeSafeToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
-			this.aboutKeeSafeToolStripMenuItem.Text = "About KeeSafe";
+			this.aboutKeeSafeToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+			this.aboutKeeSafeToolStripMenuItem.Text = "About KeySafe";
 			this.aboutKeeSafeToolStripMenuItem.Click += new System.EventHandler(this.aboutKeeSafeToolStripMenuItem_Click);
 			// 
 			// groupBox1
@@ -310,13 +317,6 @@
 			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
 			this.dataGridViewTextBoxColumn4.ReadOnly = true;
 			this.dataGridViewTextBoxColumn4.Width = 143;
-			// 
-			// ctxDelete
-			// 
-			this.ctxDelete.Name = "ctxDelete";
-			this.ctxDelete.Size = new System.Drawing.Size(152, 24);
-			this.ctxDelete.Text = "Delete";
-			this.ctxDelete.Click += new System.EventHandler(this.ctxDelete_Click);
 			// 
 			// KeySafe
 			// 
