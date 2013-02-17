@@ -3,10 +3,12 @@ KeySafe Key Management Utility
 E.Butusov <ebutusov@gmail.com>
 
 1. What is it?
+
    KeySafe is a simply utility to store passwords and other sensitive data,
    protected with one master key.
 
 2. How does it work?
+
    First you need to register the storage (File->Register storage). If it is
    a new storage, point to any empty file hidden somewhere. This is where all
    data will be stored (after encryption). Think of it as some kind of simple
