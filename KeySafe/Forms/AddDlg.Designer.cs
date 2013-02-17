@@ -40,6 +40,7 @@
 			this.btOK = new System.Windows.Forms.Button();
 			this.tbRepeat = new System.Windows.Forms.TextBox();
 			this.lbRepeat = new System.Windows.Forms.Label();
+			this.chbShowPass = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -144,6 +145,17 @@
 			this.lbRepeat.TabIndex = 3;
 			this.lbRepeat.Text = "Repeat password:";
 			// 
+			// chbShowPass
+			// 
+			this.chbShowPass.AutoSize = true;
+			this.chbShowPass.Location = new System.Drawing.Point(23, 197);
+			this.chbShowPass.Name = "chbShowPass";
+			this.chbShowPass.Size = new System.Drawing.Size(135, 21);
+			this.chbShowPass.TabIndex = 8;
+			this.chbShowPass.Text = "Show passwords";
+			this.chbShowPass.UseVisualStyleBackColor = true;
+			this.chbShowPass.CheckedChanged += new System.EventHandler(this.chbShowPass_CheckedChanged);
+			// 
 			// AddDlg
 			// 
 			this.AcceptButton = this.btOK;
@@ -151,6 +163,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.btCancel;
 			this.ClientSize = new System.Drawing.Size(414, 230);
+			this.Controls.Add(this.chbShowPass);
 			this.Controls.Add(this.tbRepeat);
 			this.Controls.Add(this.lbRepeat);
 			this.Controls.Add(this.btOK);
@@ -187,5 +200,6 @@
 		private System.Windows.Forms.Button btOK;
 		private System.Windows.Forms.TextBox tbRepeat;
 		private System.Windows.Forms.Label lbRepeat;
+		private System.Windows.Forms.CheckBox chbShowPass;
 	}
 }

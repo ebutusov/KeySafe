@@ -99,5 +99,11 @@ namespace KeySafe
 
 			DialogResult = DialogResult.OK;
 		}
+
+		private void chbShowPass_CheckedChanged(object sender, EventArgs e)
+		{
+			this.tbPassword.UseSystemPasswordChar = 
+				this.tbRepeat.UseSystemPasswordChar = !chbShowPass.Checked;
+		}
 	}
 }
