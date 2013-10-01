@@ -1,6 +1,6 @@
 KeySafe Key Management Utility
 ------------------------------
-E.Butusov <ebutusov@gmail.com>
+E.Butusov
 
 1. What is it?
 
